@@ -1,9 +1,9 @@
 // Replace with the restaurant's VERIFIED Nigerian WhatsApp number, e.g. 2348012345678.
 const RESTAURANT_WHATSAPP = '2348116038228';
 const menu = {
-  jollof: {name:'Jollof Rice & Meat',price:3500},
-  egusi: {name:'Swallow & Egusi Soup',price:4000},
-  assorted: {name:'Swallow & Assorted Stew',price:4500}
+  rice: {name:'Rice & Meat',price:1100},
+  egusi: {name:'Swallow & Egusi Soup',price:1100},
+  beans: {name:'beans & Rice',price:1100}
 };
 const cart = {};
 const naira = amount => '₦' + amount.toLocaleString('en-NG');
@@ -39,9 +39,9 @@ document.getElementById('checkout').addEventListener('click',()=>{
   }
   const name=document.getElementById('customer-name').value.trim();
   const total=entries.reduce((sum,[id,qty])=>sum+menu[id].price*qty,0);
-  const lines=['Hello TastyBite Kitchen, I would like to order:',...entries.map(([id,qty])=>`- ${menu[id].name} x${qty}: ${naira(menu[id].price*qty)}`),`Total: ${naira(total)}`];
+  const lines=['Hello Ifs Kitchen, I would like to order:',...entries.map(([id,qty])=>`- ${menu[id].name} x${qty}: ${naira(menu[id].price*qty)}`),`Total: ${naira(total)}`];
   if(name)lines.push(`Customer: ${name}`);
-  lines.push('Please confirm availability, delivery/pickup and final charges.');
+  lines.push('Please confirm availability, reserve and final charges.');
   window.open(`https://wa.me/${RESTAURANT_WHATSAPP}?text=${encodeURIComponent(lines.join('\n'))}`,'_blank','noopener,noreferrer');
 });
 document.getElementById('year').textContent=new Date().getFullYear();
