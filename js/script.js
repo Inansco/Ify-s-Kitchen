@@ -3,7 +3,12 @@ const RESTAURANT_WHATSAPP = '2348116038228';
 const menu = {
   rice: {name:'Rice & Meat',price:1100},
   egusi: {name:'Swallow & Egusi Soup',price:1100},
-  beans: {name:'beans & Rice',price:1100}
+  beans: {name:'Rice & Assorted Meat',price:1100},
+  'fried-rice': {name:'Nigerian Fried Rice',price:1100},
+  'beans-porridge': {name:'Beans Porridge & Plantain',price:1100},
+  'jollof-spaghetti': {name:'Jollof Spaghetti',price:1100},
+  'rice-beans': {name:'Rice & Beans',price:1100},
+  'vegetable-soup': {name:'Swallow & Vegetable Soup',price:1100}
 };
 const cart = {};
 const naira = amount => '₦' + amount.toLocaleString('en-NG');
