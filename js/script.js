@@ -1,5 +1,5 @@
 // Replace with the restaurant's VERIFIED Nigerian WhatsApp number, e.g. 2348012345678.
-const RESTAURANT_WHATSAPP = '2348116038228';
+const RESTAURANT_WHATSAPP = '2349025642333';
 const menu = {
   rice: {name:'Rice & Meat',price:1100},
   egusi: {name:'Swallow & Egusi Soup',price:1100},
@@ -8,7 +8,7 @@ const menu = {
   'beans-porridge': {name:'Beans Porridge & Plantain',price:1100},
   'jollof-spaghetti': {name:'Jollof Spaghetti',price:1100},
   'rice-beans': {name:'Rice & Beans',price:1100},
-  'vegetable-soup': {name:'Swallow & Vegetable Soup',price:1100}
+  'vegetable-soup': {name:'Swallow & Vegetable Soup',price:1300}
 };
 const cart = {};
 const naira = amount => '₦' + amount.toLocaleString('en-NG');
